@@ -1,0 +1,574 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec 16 13:03:18 2020
+# Process ID: 8892
+# Current directory: C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent876 C:\Users\13677\Desktop\2020 Autumn Semester\Analog and digital circuits\digital project\aaaaa\aaaaa.xpr
+# Log file: C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/vivado.log
+# Journal file: C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1035.074 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.406 ; gain = 0.332
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/uut/State}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/uut/NextState}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/uut/Delay_counter}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+set_property -name {xsim.simulate.runtime} -value {250ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/testbench/uut/State}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/testbench/uut/NextState}} 
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/testbench/uut/Delay_counter}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1258.953 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 37
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 38
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 65
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 67
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 70
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 58
+run 10 ns
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 47500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 50 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 24
+step
+Stopped at time : 50 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 25
+step
+Stopped at time : 50 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 52500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 52500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 52500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 52500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 52500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 ns
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 37
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 38
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 65
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 67
+step
+Stopped at time : 32500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 70
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 58
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 59
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 24
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 25
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 65
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 67
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 70
+step
+Stopped at time : 35 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 37500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 60
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 61
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 24
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 25
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 65
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 67
+step
+Stopped at time : 40 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 70
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 22500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 68
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 69
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 24
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 25
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 65
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 67
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 68
+step
+Stopped at time : 25 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 26
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 27
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 28
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 29
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 32
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 33
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 52
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 53
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 55
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 74
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 76
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 78
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 81
+step
+Stopped at time : 27500 ps : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" Line 82
+step
+Stopped at time : 30 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 70
+step
+Stopped at time : 30 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 71
+step
+Stopped at time : 30 ns : File "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sim_1/new/testbench.vhd" Line 24
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'home_security'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.home_security [home_security_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1258.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'home_security'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.home_security [home_security_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 250ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 250ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1947.824 ; gain = 0.000
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/testbench/uut/state}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/testbench/uut/NextState}} 
+current_wave_config {Untitled 3}
+Untitled 3
+add_wave {{/testbench/uut/Delay_Counter}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/aaaaa.sim/sim_1/behav/xsim'
+"xelab -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 69e9a9fb5a5c44c696040e130c185471 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_behav xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+save_wave_config {C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/testbench_behav.wcfg}}
+set_property xsim.view {{C:/Users/13677/Desktop/2020 Autumn Semester/Analog and digital circuits/digital project/aaaaa/testbench_behav.wcfg}} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 16 13:43:04 2020...
